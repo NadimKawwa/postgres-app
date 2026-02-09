@@ -1,0 +1,18 @@
+[
+  { "restaurant_id": 1, "text": "Solid burgers and friendly staff. The mac and cheese is a must. Came with the family and everyone left full and happy.", "rating": 5 },
+  { "restaurant_id": 1, "text": "Good American food but a bit pricey for what you get. Steak was cooked well.", "rating": 4 },
+  { "restaurant_id": 2, "text": "Best sushi in town. Fresh fish and the ramen is incredible. Will definitely be back.", "rating": 5 },
+  { "restaurant_id": 2, "text": "Authentic Japanese experience. Sake selection is great. Service was a bit slow on a busy Saturday.", "rating": 4 },
+  { "restaurant_id": 3, "text": "Love the pasta here. Feels like a real Italian kitchen. The tiramisu is to die for.", "rating": 5 },
+  { "restaurant_id": 3, "text": "Pizza was good, pasta was okay. Nice patio in the summer.", "rating": 4 },
+  { "restaurant_id": 4, "text": "Amazing curries and the lunch buffet is a steal. So much flavor. Can get spicy so ask if you're sensitive.", "rating": 5 },
+  { "restaurant_id": 4, "text": "Great vegetarian options. The dal and naan are perfect. A bit crowded at dinner.", "rating": 4 },
+  { "restaurant_id": 5, "text": "Tacos are legit and the margaritas hit the spot. Fun vibe, good for a casual night out.", "rating": 5 },
+  { "restaurant_id": 5, "text": "Decent tacos, nothing special. Bar is loud on Friday nights. Good for groups.", "rating": 3 },
+  { "restaurant_id": 6, "text": "Romantic and delicious. The duck confit was perfect. Wine list is small but well chosen.", "rating": 5 },
+  { "restaurant_id": 6, "text": "Lovely bistro. Coq au vin was excellent. A bit on the expensive side but worth it for a special occasion.", "rating": 5 },
+  { "restaurant_id": 7, "text": "Dumplings and mapo tofu are my go-to. Spicy and satisfying. Takeout holds up well.", "rating": 4 },
+  { "restaurant_id": 7, "text": "Good Chinese food, generous portions. Service can be hit or miss when they're busy.", "rating": 4 },
+  { "restaurant_id": 8, "text": "Best grain bowls and smoothies. Healthy and actually tasty. Great for a quick lunch.", "rating": 5 },
+  { "restaurant_id": 8, "text": "Nice vegetarian spot. Vegan pastries are hit or miss but the bowls are consistently good.", "rating": 4 }
+]

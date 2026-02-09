@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "The Golden Fork",
+    "address": { "street": "42 Main St", "city": "Downtown", "zip": "10001" },
+    "cuisine": "American",
+    "hours": { "mon": "11:00-22:00", "tue": "11:00-22:00", "wed": "11:00-22:00", "thu": "11:00-23:00", "fri": "11:00-23:00", "sat": "10:00-23:00", "sun": "10:00-21:00" },
+    "rating": 4.5,
+    "review_count": 128,
+    "description": "Classic American comfort food with a modern twist. Burgers, steaks, and mac and cheese in a cozy setting. Great for families and casual dinners."
+  },
+  {
+    "id": 2,
+    "name": "Sakura Sushi Bar",
+    "address": { "street": "15 Oak Ave", "city": "Midtown", "zip": "10002" },
+    "cuisine": "Japanese",
+    "hours": { "mon": "closed", "tue": "17:00-22:00", "wed": "17:00-22:00", "thu": "17:00-22:00", "fri": "17:00-23:00", "sat": "12:00-23:00", "sun": "12:00-21:00" },
+    "rating": 4.8,
+    "review_count": 203,
+    "description": "Fresh nigiri and sashimi, authentic ramen, and a wide selection of sake. Traditional Japanese dining with a calm atmosphere. Reservations recommended."
+  },
+  {
+    "id": 3,
+    "name": "La Trattoria",
+    "address": { "street": "88 Vine St", "city": "Downtown", "zip": "10001" },
+    "cuisine": "Italian",
+    "hours": { "mon": "12:00-22:00", "tue": "12:00-22:00", "wed": "12:00-22:00", "thu": "12:00-23:00", "fri": "12:00-23:00", "sat": "12:00-23:00", "sun": "12:00-21:00" },
+    "rating": 4.3,
+    "review_count": 95,
+    "description": "Homemade pasta, wood-fired pizzas, and Italian wines. Family-run spot with warm service and a patio for outdoor dining."
+  },
+  {
+    "id": 4,
+    "name": "Spice Route",
+    "address": { "street": "5 Market Lane", "city": "Midtown", "zip": "10002" },
+    "cuisine": "Indian",
+    "hours": { "mon": "11:30-22:30", "tue": "11:30-22:30", "wed": "11:30-22:30", "thu": "11:30-22:30", "fri": "11:30-23:00", "sat": "11:30-23:00", "sun": "11:30-22:00" },
+    "rating": 4.6,
+    "review_count": 167,
+    "description": "North and South Indian curries, tandoori, and biryani. Vegetarian and vegan options. Bold flavors and generous portions. Lunch buffet on weekdays."
+  },
+  {
+    "id": 5,
+    "name": "Taco Loco",
+    "address": { "street": "200 Elm St", "city": "Downtown", "zip": "10001" },
+    "cuisine": "Mexican",
+    "hours": { "mon": "10:00-22:00", "tue": "10:00-22:00", "wed": "10:00-22:00", "thu": "10:00-23:00", "fri": "10:00-00:00", "sat": "09:00-00:00", "sun": "09:00-22:00" },
+    "rating": 4.2,
+    "review_count": 312,
+    "description": "Street-style tacos, burritos, and margaritas. Casual counter service and a lively bar. Late-night hours on weekends. Great for groups."
+  },
+  {
+    "id": 6,
+    "name": "Le Petit Bistro",
+    "address": { "street": "33 Rue de la Paix", "city": "Midtown", "zip": "10002" },
+    "cuisine": "French",
+    "hours": { "mon": "closed", "tue": "18:00-22:00", "wed": "18:00-22:00", "thu": "18:00-22:00", "fri": "18:00-23:00", "sat": "12:00-23:00", "sun": "12:00-21:00" },
+    "rating": 4.7,
+    "review_count": 88,
+    "description": "French bistro classics: coq au vin, duck confit, crème brûlée. Intimate setting with a small wine list. Perfect for date night."
+  },
+  {
+    "id": 7,
+    "name": "Dragon Wok",
+    "address": { "street": "99 Chinatown Rd", "city": "Downtown", "zip": "10001" },
+    "cuisine": "Chinese",
+    "hours": { "mon": "11:00-23:00", "tue": "11:00-23:00", "wed": "11:00-23:00", "thu": "11:00-23:00", "fri": "11:00-00:00", "sat": "10:00-00:00", "sun": "10:00-23:00" },
+    "rating": 4.1,
+    "review_count": 256,
+    "description": "Szechuan and Cantonese dishes: dumplings, Kung Pao chicken, mapo tofu. Spicy options and takeout friendly. No-frills, big flavors."
+  },
+  {
+    "id": 8,
+    "name": "Green Leaf Kitchen",
+    "address": { "street": "12 Park Blvd", "city": "Midtown", "zip": "10002" },
+    "cuisine": "Vegetarian",
+    "hours": { "mon": "08:00-21:00", "tue": "08:00-21:00", "wed": "08:00-21:00", "thu": "08:00-21:00", "fri": "08:00-22:00", "sat": "09:00-22:00", "sun": "09:00-20:00" },
+    "rating": 4.4,
+    "review_count": 134,
+    "description": "Plant-based breakfast and lunch. Grain bowls, smoothies, and vegan pastries. Cozy cafe with outdoor seating. Good for a quick healthy bite."
+  }
+]
