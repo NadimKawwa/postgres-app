@@ -25,8 +25,7 @@ postgres-shell:
 
 # PostgREST
 postgrest: network
-	@# Generate connection string using Python to handle URL encoding
-	@export DB_URI=$$(uv run python -c "import os, urllib.parse; from dotenv import load_dotenv; load_dotenv(); print(f'postgres://{os.getenv('POSTGRES_USER')}:{urllib.parse.quote_plus(os.getenv('POSTGRES_PASSWORD'))}@pgdb:5432/postgres')") && \
+	@export DB_URI=$$(uv run python scripts/db_uri.py) && \
 	docker run -d --rm --name postgrest \
 	--network $(NETWORK) \
 	-p 3005:3000 \
