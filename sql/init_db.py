@@ -2,7 +2,9 @@
 
 from importlib import metadata
 import sys
-from pathlib import Path 
+from pathlib import Path
+
+from sqlalchemy.dialects import postgresql 
 
 #allow impport app when running as  pyhon sql/init_dbpy 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
@@ -22,7 +24,7 @@ from sqlalchemy import (
 from sqlalchemy.dialects.postgresql import JSONB 
 from sqlalchemy.types import UserDefinedType
 
-from app.config import DATABSE_URL 
+from app.config import DATABASE_URL 
 from app.db import engine 
 
 
@@ -38,7 +40,7 @@ class Vector384Type(UserDefinedType):
 metadata = MetaData()
 
 
-resturants = Table(
+restaurants = Table(
     "restaurants",
     metadata,
     Column("id", Integer, primary_key=True, autoincrement=True),
@@ -50,6 +52,40 @@ resturants = Table(
     Column("review_count", Integer),
     Column("description", Text),
     Column("embedding", Vector384Type()),
-    Column("search", TSVectorType)
+    Column("search", TSVectorType())
 )
 
+reviews = Table(
+    "reviews",
+    metadata,
+    Column("id", Integer, primary_key=True, autoincrement=True),
+    Column("restaurant_id", Integer, ForeignKey("restaurants.id", ondelete="CASCADE"), nullable=False),
+    Column("text", Text, nullable=False),
+    Column("rating", Integer)
+)
+
+idx_restaurant_search = Index(
+    "idx_restaurant_search",
+    restaurants.c.search,
+    postgresql_using="gin" 
+)
+
+def init_db():
+    with engine.connect() as conn:
+        conn.execute(text("CREATE EXTENSION IF NOT EXISTS vector"))
+        conn.commit()
+
+    metadata.create_all(engine)
+
+    #ivfflat aka ANN 
+    with engine.connect() as conn:
+        conn.execute(text("""
+        CREATE INDEX IF NOT EXISTS idx_restaurants_embedding
+        ON restaurants USING ivfflat (embedding vector_cosine_ops) WITH (lists = 3)
+        """))
+        conn.commit() 
+    print("DB Success initialization")
+
+
+if __name__ == "__main__":
+    init_db()

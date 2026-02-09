@@ -1,7 +1,10 @@
  # SQLAlchemy engine/session, asyncpg if needed
-from config import DATABASE_URL 
+from app.config import DATABASE_URL 
 
-from sqlalchemy import create_engine, sessionmaker, Session 
+from sqlalchemy import create_engine 
+from sqlalchemy.orm import sessionmaker
+
+
 
 engine = create_engine(
     DATABASE_URL, 
